@@ -323,7 +323,7 @@ _Po domače: Vsaka dovolj dolga beseda $z$, ki jo KA sprejema, vsebuje podbesedo
 Regularne množice so zaprte nad naslednjimi lastnostmi:
 *   unijo
 *   presek
-*   kontantikacijo
+*   stik
 *   Klenovim zaprtjem
 *   komplementom
 *   substitucijo
