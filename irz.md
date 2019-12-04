@@ -649,7 +649,7 @@ Obstajajo odločitveni algoritmi za KNJ, ki nam povejo ali je KNJ:
 
 ### Odnosi med razredi jezikov
 
-<img src = "./odnosi-med-jeziki.png"></img>
+<img src = "./pics/odnosi-med-jeziki.png"></img>
 
 ## Modifikacije Turingovih strojev
 
@@ -760,7 +760,7 @@ Obstajajo 3 vrste odločitvenih problemov:
 * množici $S\ \circ$ in $\bar{S}\ \bullet$ sta *nedoločljiva*, en je *poldoločljiv*, drugi je *nedoločljiv*
 * množici $S\ \square$ in $\bar{S}\ \blacksquare$ sta *nedoločljivi* in nista *poldoločljivi*
 
-<img src = "mnozice-in-problemi.png"></img>
+<img src = "./pics/mnozice-in-problemi.png"></img>
 
 ## Primeri neiračunljivih problemov
 * **Terminacija algoritma**: ali se algoritem termini, če vsatvimo v njega določene podatke?
@@ -933,4 +933,4 @@ Verjetno ne drži, ker bi posledice bile preveč "presenetljive"$_{Robič\ 2018}
 ### Povzetek
 *Če velja $P \not = NP$, potem je NP razred sestavljen iz:*
 
-<img src = "np-razred.png"> </img>
+<img src = "./pics/np-razred.png"> </img>
