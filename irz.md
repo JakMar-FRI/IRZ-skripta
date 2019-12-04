@@ -137,7 +137,7 @@ niz znakov z določenim vrstnim redom\
 > __Neusmerjen graf__ označujemo z $G = (V, E)$, kjer je $V$ končna množica vozlišč in $E$ končna množica parov vozlišč imenovanih robovi.
 >> __Pot v grafu__ je zaporedje vozlišč grafa tako, da obstaja povezava med dvema soležnima vozliščema v poti.
 
-> __Usmerjen graf__ označujemo z $G = (V, A)$, kjer je $V$ končna množica vozlišč in $E$ končna množica urejenih (usmerjenih) parov vozlišč.
+> __Usmerjen graf__ označujemo z $G = (V, A)$, kjer je $V$ končna množica vozlišč in $A$ končna množica urejenih (usmerjenih) parov vozlišč.
 > > Urejeno pot med vozliščema $u$ in $v$ označimo kot $u \rightarrow v$
 
 > __Drevo__ je graf z lastnostmi:
@@ -167,7 +167,7 @@ $\{ x \in A | P(x)\}$ - $x$ je množica elementov množice $A$, da velja $P(x)$
 
 ### Relacije med množicami
 > Binarna relacija:
-> $$ R = \{ \ (a, b) \ | \ a \in A \ \land b \in B\}
+> $$ R = \{ \ (a, b) \ | \ a \in A \ \land b \in B\} $$
 
 Množica _lahko_ ima naslednje lastnosti:
 * __refleksivnost__, če velja $aRa \ \forall \ a \in S$ 
