@@ -15,7 +15,7 @@
     - [Relacije med množicami](#relacije-med-mno%c5%beicami)
       - [P-zaprta množica](#p-zaprta-mno%c5%beica)
   - [Računski model](#ra%c4%8dunski-model)
-    - [Neizračljivi problemi](#neizra%c4%8dljivi-problemi)
+    - [Neizračunljivi problemi](#neizra%c4%8dunljivi-problemi)
 - [2. Končni avtomati in regularni izrazi](#2-kon%c4%8dni-avtomati-in-regularni-izrazi)
   - [Sistem končni stanj](#sistem-kon%c4%8dni-stanj)
   - [Deterministični končni avtomat $DKA = (Q, \Sigma, \delta, q_0, F)$](#deterministi%c4%8dni-kon%c4%8dni-avtomat-dka--q-sigma-delta-q0-f)
@@ -193,7 +193,7 @@ __Računski model__ je formalna definicija _osnovne notacije_ algoritmičnega ra
 * okolje
 * kako se algoritem izvede v danem okolju
 
-### Neizračljivi problemi
+### Neizračunljivi problemi
 Obstaja več problemov kot je algoritmov za računanje. Zato obstajajo funkcije, ki so neizračunljive.
 
 > _Za funkcijo $f$ ne obstaja računalniški program (algoritem), ki bi za vsak dan element $x$ za $f$ izračunal vrednost $f(x)$ in bi deloval za vse mogoče $x$._
@@ -215,7 +215,7 @@ DKA je sestavljen iz končne množice stanj in prehodov med stanji, ki se zgodij
 >* __$q_0 \in Q$ je začetno stanje,__
 >* __$F \subseteq Q$ je množica končnih stanj,__
 >* __$\delta$ je prehodna funkcija, (primer: $\delta: Q \times \Sigma \rightarrow Q$)__
->  * $\delta(q, a)$ je stanje 
+>  * $\delta(q, a)$ je stanje
 
 > DKA $M = (Q, \Sigma, \delta, q_0, F)$ sprejme niz $x$, če velja __$\delta(q_0, x) = p$ za nek $p \in F$__
 
@@ -224,7 +224,7 @@ DKA je sestavljen iz končne množice stanj in prehodov med stanji, ki se zgodij
 > Jezik je regularna množica, če ga sprejme _nek_ DKA.
 
 ### Delovanje DKA
-Če je DKA v stanje $q$ ine prebere simbol $a$, potem v _eni potezi_:
+Če je DKA v stanju $q$ in prebere simbol $a$, potem v _eni potezi_:
 1.  vstopi v naslednje stanje $\delta(q, a)$
 2.  premakne svoje okno za en simbol v desno
 
@@ -317,7 +317,7 @@ __Lema o napihovanju dokazuje, da nek jezik ni regularen in/ali, da je neskonče
 _Po domače: Vsaka dovolj dolga beseda $z$, ki jo KA sprejema, vsebuje podbesedo $v$, ki jo lahko poljubnokrat "napihnemo" in kot rezultat ponovno dobimo besedo, ki jo KA še vedno sprejme._
 
 > ### Formalen zapis leme o napihovanju
-> $$ L\ regularen \Rightarrow (\exists n) (\forall z)\ [z \in L\ \land\ |z| \geq n \Rightarrow (\exists u, v, w) [z = uvw \ \land\ |uv| \leq n \ \land\ |v| \geq 1 \ \land\ (\forall i  \geq 0)uv^iw \in L]\ ]
+> $$ L\ regularen \Rightarrow (\exists n) (\forall z)\ [z \in L\ \land\ |z| \geq n \Rightarrow (\exists u, v, w) [z = uvw \ \land\ |uv| \leq n \ \land\ |v| \geq 1 \ \land\ (\forall i  \geq 0)uv^iw \in L\]\ ]
 
 ## Lastnosti regularnih množic
 Regularne množice so zaprte nad naslednjimi lastnostmi:
@@ -350,11 +350,11 @@ _Myhill-Nerode teorem določa minimalen deterministični končni avtomat, ki spr
 > Naslednje izjave so _ekvivalentne_:
 > 1.    $L \subseteq \Sigma^*$ je regularna množica,
 > 2.    $R_L$ je končni indeks,
-> 3.    $L$ je unija nekih ekvivalentnih razredov pravih invarint ekvivalenčne relacije končnega indeksa
+> 3.    $L$ je unija nekih ekvivalentnih razredov pravih invariant ekvivalenčne relacije končnega indeksa
 
 Posledica teorema je, da obstaja unikaten minimalen DKA za vsako regularno množico.
 
->Minimale unikaten DKA za regularno množico $L$ je unikaten do izomorfizma (preimenovanja stanj).
+>Minimalen unikaten DKA za regularno množico $L$ je unikaten do izomorfizma (preimenovanja stanj).
 
 
 # 4. Kontektsno neodvisne gramatike
@@ -369,7 +369,7 @@ Posledica teorema je, da obstaja unikaten minimalen DKA za vsako regularno množ
 
 ## Definicija jezikov generiranih s KNG
 > Jezik generiran z KNG $G = (V, T, P, S)$ je množica
-> $$L(G) = \{\ w\ |\ w \in T^* \land S_G \Rightarrow^* w\} 
+> $$L(G) = \{\ w\ |\ w \in T^* \land S_G \Rightarrow^* w\}
 
 ## Derivacijsko drevo
 Derivacije lahko predstavimo kot derivacijsko drevo. Vozlišča so označena s _terminali_ ali _spremenljivkami_ ali s praznim znakom ($\varepsilon$).
@@ -402,7 +402,7 @@ Primer kontekstno bistveno dvoumnega neodvisnega jezika:
 $$ L = \{ a^n b^n c^m d^m\ |\ n \geq 1, m \geq 1 \} \cup \{ a^n b^m c^m d^n\ |\ n \geq 1, m \geq 1 \}$$
 
 ## Poenostavljanje kontekstno neodvisnih gramatik
-Če je $L$ neprazna KNJ je lahko generiran s KNG $G$ z naslednjimi lastnostmi:
+Če je $L$ neprazen KNJ je lahko generiran s KNG $G$ z naslednjimi lastnostmi:
 *   vsaka spremenljivka in terminal $G$_-ja_ je predstavljen v derivaciji neke besede v $L$
 *   ne obstaja produkcija $A \rightarrow B$, kjer sta $A$ in $B$ spremenljivki
 *   če $\varepsilon \notin L$, potem ni nobene produkcije oblike $A \rightarrow \varepsilon$
@@ -416,7 +416,7 @@ $$ L = \{ a^n b^n c^m d^m\ |\ n \geq 1, m \geq 1 \} \cup \{ a^n b^m c^m d^n\ |\ 
 > Vsak neprazen kontekstno neodvisni jezik je generiran s kontekstno neodvisno gramatiko brez nepotrebnih simbolov.
 
 ### Eliminacija $\varepsilon$ produkcije
-> #### Definicija $\varepsilon$ produkcije 
+> #### Definicija $\varepsilon$ produkcije
 > je produkcija oblike $A \rightarrow \varepsilon$
 
 > Če je $L = L(G)$ za nek KNG $G = (V, T, P, S)$, potem je $L - \{ \varepsilon\} = L(G')$ za nek KNG $G'$ brez nepotrebnih simbolov in/ali $\varepsilon$ produkcij.
@@ -447,7 +447,7 @@ $$ L = \{ a^n b^n c^m d^m\ |\ n \geq 1, m \geq 1 \} \cup \{ a^n b^m c^m d^n\ |\ 
 
 # Skladovni avtomati
 
-Če končni avtomat dopolnimo s kontrolno enoto za tekoči vhodni trak in skladom dombimo __skladovni avtomat__. Tako kot imajo regularni izrazi končne avtomate, imajo kontekstno neodvisne gramatike skladovne avtomate.
+Če končni avtomat dopolnimo s kontrolno enoto za tekoči vhodni trak in skladom dobimo __skladovni avtomat__. Tako kot imajo regularni izrazi končne avtomate, imajo kontekstno neodvisne gramatike skladovne avtomate.
 
 Nedeterministični skladovni avtomat ima _večjo_ moč od determinističnega - kontekstno neodvisni jeziki, ki jih sprejema deterministični SA, so podmnožica KNJ, ki jih sprejemajo nedeterministični SA.
 
@@ -460,7 +460,7 @@ Skladovni avtomat setavljajo naslednje enote:
 ### Premiki skladovnega avtomata
 Skladovni avtomat ima dva možna premika: _običajen premik_ in _$\varepsilon$_ premik.
 * __običajen premik__: znak je sprejet. Glede na: stanje $q$, vhodni simbol $a$ in najvišji simbol na skladu $Z$ obstaja končno mnogo možnosti.
-  * $i$_-tem_ korak je sestavljen iz naslednjega stanja $p$, (lahko praznega) niza $y_i$ (simbolov, ki zamenjajo vrhnji element na skladu)
+  * $i$_-ti_ korak je sestavljen iz naslednjega stanja $p$, (lahko praznega) niza $y_i$ (simbolov, ki zamenjajo vrhnji element na skladu)
   * po končanem izboru se okno premakne za 1 naprej
 * __$\varepsilon$__: od običajnega premika se razlikuje, da znak ni sprejet in na koncu okno ne napreduje za 1 naprej
 
@@ -479,9 +479,9 @@ Skladovni avtomat ima dva možna premika: _običajen premik_ in _$\varepsilon$_ 
 > 1.    $$ \delta(q, \varepsilon, Z) \not = \emptyset \Rightarrow \forall a \in \Sigma\ :\ \delta(q, a, Z) = \emptyset $$
 > 2.    $$ \forall a \in \Sigma\ \cup\ \{ \varepsilon \}\ :\ |\delta(q, a, Z)| \leq 1 $$
 
-_Prvi pogoj preprečuje možnost izbire med tihim prehodom in običajnim prehodom. Drugi pogoj preprečuje možnost več kot ene možnost v primeru tihih ali običajnih prehodov._
+_Prvi pogoj preprečuje možnost izbire med tihim prehodom in običajnim prehodom. Drugi pogoj preprečuje možnost več kot ene možnosti v primeru tihih ali običajnih prehodov._
 
-__V primeru skladovnih avtomato, vedno predpostavljamo, da gre za nedeterminističnega!__
+__V primeru skladovnih avtomatov, vedno predpostavljamo, da gre za nedeterminističnega!__
 
 >### Trenutni opis skladovnega avtomata
 > Skladovni avtomat lahko v vsakem trenutku opišemo s trojčkom $(q, \omega, \gamma)$, kjer je $q$ stanje, $\omega$ niz vhodnih podatkov, $\gamma$ niz skladovnih podatkov.
