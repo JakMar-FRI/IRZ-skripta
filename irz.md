@@ -28,6 +28,7 @@
     - [Definicija](#definicija-1)
   - [Ekvivalentnost NKA in NKA$_\varepsilon$](#ekvivalentnost-nka-in-nkavarepsilon)
   - [Regularni izrazi](#regularni-izrazi)
+    - [Definicija regularnih izrazov](#definicija-regularnih-izrazov)
     - [Operacije nad regularnimi izrazi](#operacije-nad-regularnimi-izrazi)
       - [Združevanje regularnih izrazov](#zdru%c5%beevanje-regularnih-izrazov)
       - [Klenovo in pozitivno zaprtje](#klenovo-in-pozitivno-zaprtje)
@@ -276,6 +277,17 @@ __Vsak NKA$\varepsilon$ lahko prevedemo v NKA brez tihih prehodov.__ NKA in NKA$
 
 ## Regularni izrazi
 Jeziki, ki jih sprejemajo končni avtomati, so __regularni izrazi__.
+
+### Definicija regularnih izrazov
+Splošne (osnovne) oblike regularni izrazov so:
+1.  $\quad a \qquad L(a) = \{ a \}$
+2.  $\quad \varepsilon \qquad L(\varepsilon) = \{ \varepsilon \}$
+3.  $\quad \empty \qquad L(\empty) = \{  \}$
+
+Nad osnovnimi oblikami lahko izvajamo operacije ($r_1,\ r_2 \in RI$):
+1.  $r_1r_2 \quad stik \qquad L(r_1r_2) = L(r_1)L(r_2)$
+2.  $r_1+r_2 \quad izbira \qquad L(r_1+r_2) = L(r_1) \cup L(r_2)$
+3.  $r^* \quad Kleenovo\ zaprtje(ovojnica) \qquad L(r^*) = L(r)^*$
 
 ### Operacije nad regularnimi izrazi
 #### Združevanje regularnih izrazov
