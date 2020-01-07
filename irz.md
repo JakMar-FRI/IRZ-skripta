@@ -18,15 +18,15 @@
     - [Neizračunljivi problemi](#neizra%c4%8dunljivi-problemi)
 - [2. Končni avtomati in regularni izrazi](#2-kon%c4%8dni-avtomati-in-regularni-izrazi)
   - [Sistem končni stanj](#sistem-kon%c4%8dni-stanj)
-  - [Deterministični končni avtomat $DKA = (Q, \Sigma, \delta, q_0, F)$](#deterministi%c4%8dni-kon%c4%8dni-avtomat-dka--q-sigma-delta-q0-f)
+  - [Deterministični končni avtomat <math><semantics><mrow><mi>D</mi><mi>K</mi><mi>A</mi><mo>=</mo><mo stretchy="false">(</mo><mi>Q</mi><mo separator="true">,</mo><mi mathvariant="normal">Σ</mi><mo separator="true">,</mo><mi>δ</mi><mo separator="true">,</mo><msub><mi>q</mi><mn>0</mn></msub><mo separator="true">,</mo><mi>F</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">DKA = (Q, \Sigma, \delta, q_0, F)</annotation></semantics></math>DKA=(Q,Σ,δ,q0​,F)](#deterministi%c4%8dni-kon%c4%8dni-avtomat-mathsemanticsmrowmidmimikmimiamimomomo-stretchy%22false%22momiqmimo-separator%22true%22momi-mathvariant%22normal%22%ce%a3mimo-separator%22true%22momi%ce%b4mimo-separator%22true%22momsubmiqmimn0mnmsubmo-separator%22true%22momifmimo-stretchy%22false%22momrowannotation-encoding%22applicationx-tex%22dka--q-sigma-delta-q0-fannotationsemanticsmathdkaq%ce%a3%ce%b4q0%e2%80%8bf)
     - [Definicija DKA](#definicija-dka)
     - [Delovanje DKA](#delovanje-dka)
-  - [Nedeterministični končni avtomat $NKA = (Q, \Sigma, \delta, q_0, F)$](#nedeterministi%c4%8dni-kon%c4%8dni-avtomat-nka--q-sigma-delta-q0-f)
+  - [Nedeterministični končni avtomat <math><semantics><mrow><mi>N</mi><mi>K</mi><mi>A</mi><mo>=</mo><mo stretchy="false">(</mo><mi>Q</mi><mo separator="true">,</mo><mi mathvariant="normal">Σ</mi><mo separator="true">,</mo><mi>δ</mi><mo separator="true">,</mo><msub><mi>q</mi><mn>0</mn></msub><mo separator="true">,</mo><mi>F</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">NKA = (Q, \Sigma, \delta, q_0, F)</annotation></semantics></math>NKA=(Q,Σ,δ,q0​,F)](#nedeterministi%c4%8dni-kon%c4%8dni-avtomat-mathsemanticsmrowminmimikmimiamimomomo-stretchy%22false%22momiqmimo-separator%22true%22momi-mathvariant%22normal%22%ce%a3mimo-separator%22true%22momi%ce%b4mimo-separator%22true%22momsubmiqmimn0mnmsubmo-separator%22true%22momifmimo-stretchy%22false%22momrowannotation-encoding%22applicationx-tex%22nka--q-sigma-delta-q0-fannotationsemanticsmathnkaq%ce%a3%ce%b4q0%e2%80%8bf)
     - [Definicija](#definicija)
   - [Ekvivalentnost DKA in NKA](#ekvivalentnost-dka-in-nka)
-  - [Nedeterministični končni avtomati s tihimi prehodi $\varepsilon$](#nedeterministi%c4%8dni-kon%c4%8dni-avtomati-s-tihimi-prehodi-varepsilon)
+  - [Nedeterministični končni avtomati s tihimi prehodi <math><semantics><mrow><mi>ε</mi></mrow><annotation encoding="application/x-tex">\varepsilon</annotation></semantics></math>ε](#nedeterministi%c4%8dni-kon%c4%8dni-avtomati-s-tihimi-prehodi-mathsemanticsmrowmi%ce%b5mimrowannotation-encoding%22applicationx-tex%22varepsilonannotationsemanticsmath%ce%b5)
     - [Definicija](#definicija-1)
-  - [Ekvivalentnost NKA in NKA$_\varepsilon$](#ekvivalentnost-nka-in-nkavarepsilon)
+  - [Ekvivalentnost NKA in NKA<math><semantics><mrow><msub><mrow></mrow><mi>ε</mi></msub></mrow><annotation encoding="application/x-tex">_\varepsilon</annotation></semantics></math>ε​](#ekvivalentnost-nka-in-nkamathsemanticsmrowmsubmrowmrowmi%ce%b5mimsubmrowannotation-encoding%22applicationx-tex%22varepsilonannotationsemanticsmath%ce%b5%e2%80%8b)
   - [Regularni izrazi](#regularni-izrazi)
     - [Definicija regularnih izrazov](#definicija-regularnih-izrazov)
     - [Operacije nad regularnimi izrazi](#operacije-nad-regularnimi-izrazi)
@@ -49,7 +49,7 @@
   - [Dvoumnne gramatike](#dvoumnne-gramatike)
   - [Poenostavljanje kontekstno neodvisnih gramatik](#poenostavljanje-kontekstno-neodvisnih-gramatik)
     - [Eliminacija neuporabnih simbolov](#eliminacija-neuporabnih-simbolov)
-    - [Eliminacija $\varepsilon$ produkcije](#eliminacija-varepsilon-produkcije)
+    - [Eliminacija <math><semantics><mrow><mi>ε</mi></mrow><annotation encoding="application/x-tex">\varepsilon</annotation></semantics></math>ε produkcije](#eliminacija-mathsemanticsmrowmi%ce%b5mimrowannotation-encoding%22applicationx-tex%22varepsilonannotationsemanticsmath%ce%b5-produkcije)
     - [Eliminacija enotskih produkcij](#eliminacija-enotskih-produkcij)
   - [Normalna oblika Chomskega](#normalna-oblika-chomskega)
   - [Normalna oblika Greibachove](#normalna-oblika-greibachove)
@@ -96,22 +96,22 @@
     - [Komplementarne množice in odločitveni problemi](#komplementarne-mno%c5%beice-in-odlo%c4%8ditveni-problemi)
   - [Primeri neiračunljivih problemov](#primeri-neira%c4%8dunljivih-problemov)
 - [10. Teorija računske zahtevnosti](#10-teorija-ra%c4%8dunske-zahtevnosti)
-  - [Deterministični čas in prostor ($DTIME, DSPACE$)](#deterministi%c4%8dni-%c4%8das-in-prostor-dtime-dspace)
-    - [Deterministična časovna zahtevnost & zahtevnostni razred *DTIME*](#deterministi%c4%8dna-%c4%8dasovna-zahtevnost--zahtevnostni-razred-dtime)
-    - [Deterministična prostorska zahtevnost & zahtevnostni razred _DSPACE_](#deterministi%c4%8dna-prostorska-zahtevnost--zahtevnostni-razred-dspace)
-  - [Nedeterministični čas in prostor *(NTIME, NSPACE)*](#nedeterministi%c4%8dni-%c4%8das-in-prostor-ntime-nspace)
-    - [Nedeterministična časovna zahtevnost & zahtevnostni razred *NTIME*](#nedeterministi%c4%8dna-%c4%8dasovna-zahtevnost--zahtevnostni-razred-ntime)
-    - [Nedeterministična prostorska zahtevnost & zahtevnostni razred _NSPACE_](#nedeterministi%c4%8dna-prostorska-zahtevnost--zahtevnostni-razred-nspace)
+  - [Deterministični čas in prostor (<math><semantics><mrow><mi>D</mi><mi>T</mi><mi>I</mi><mi>M</mi><mi>E</mi><mo separator="true">,</mo><mi>D</mi><mi>S</mi><mi>P</mi><mi>A</mi><mi>C</mi><mi>E</mi></mrow><annotation encoding="application/x-tex">DTIME, DSPACE</annotation></semantics></math>DTIME,DSPACE)](#deterministi%c4%8dni-%c4%8das-in-prostor-mathsemanticsmrowmidmimitmimiimimimmimiemimo-separator%22true%22momidmimismimipmimiamimicmimiemimrowannotation-encoding%22applicationx-tex%22dtime-dspaceannotationsemanticsmathdtimedspace)
+    - [Deterministična časovna zahtevnost &amp; zahtevnostni razred DTIME](#deterministi%c4%8dna-%c4%8dasovna-zahtevnost-amp-zahtevnostni-razred-dtime)
+    - [Deterministična prostorska zahtevnost &amp; zahtevnostni razred DSPACE](#deterministi%c4%8dna-prostorska-zahtevnost-amp-zahtevnostni-razred-dspace)
+  - [Nedeterministični čas in prostor (NTIME, NSPACE)](#nedeterministi%c4%8dni-%c4%8das-in-prostor-ntime-nspace)
+    - [Nedeterministična časovna zahtevnost &amp; zahtevnostni razred NTIME](#nedeterministi%c4%8dna-%c4%8dasovna-zahtevnost-amp-zahtevnostni-razred-ntime)
+    - [Nedeterministična prostorska zahtevnost &amp; zahtevnostni razred NSPACE](#nedeterministi%c4%8dna-prostorska-zahtevnost-amp-zahtevnostni-razred-nspace)
     - [Povzetek zahtevnostnih razredov](#povzetek-zahtevnostnih-razredov)
   - [Kompresija traku, linearna pohitritev, redukcija števila trakov](#kompresija-traku-linearna-pohitritev-redukcija-%c5%a1tevila-trakov)
     - [Kompresija traku, linearna pohitritev](#kompresija-traku-linearna-pohitritev)
     - [Redukcija števila trakov](#redukcija-%c5%a1tevila-trakov)
-  - [Relacije med *DTIME, DSPACE, NTIME, NSPACE*](#relacije-med-dtime-dspace-ntime-nspace)
-    - [Funkcija, ki se lepo obnaša *(well-behaved)*](#funkcija-ki-se-lepo-obna%c5%a1a-well-behaved)
-  - [Razredi *P, NP, PSPACE, NPSPACE*](#razredi-p-np-pspace-npspace)
+  - [Relacije med DTIME, DSPACE, NTIME, NSPACE](#relacije-med-dtime-dspace-ntime-nspace)
+    - [Funkcija, ki se lepo obnaša (well-behaved)](#funkcija-ki-se-lepo-obna%c5%a1a-well-behaved)
+  - [Razredi P, NP, PSPACE, NPSPACE](#razredi-p-np-pspace-npspace)
     - [Osnovna relacija med razredi](#osnovna-relacija-med-razredi)
-  - [$P =^? NP$](#p--np)
-  - [_NP-polni_ in _NP-težki_ problemi](#np-polni-in-np-te%c5%beki-problemi)
+  - [<math><semantics><mrow><mi>P</mi><msup><mo>=</mo><mo stretchy="false">?</mo></msup><mi>N</mi><mi>P</mi></mrow><annotation encoding="application/x-tex">P =^? NP</annotation></semantics></math>P=?NP](#mathsemanticsmrowmipmimsupmomomo-stretchy%22false%22momsupminmimipmimrowannotation-encoding%22applicationx-tex%22p--npannotationsemanticsmathpnp)
+  - [NP-polni in NP-težki problemi](#np-polni-in-np-te%c5%beki-problemi)
     - [Povzetek](#povzetek)
 
 # 1. Uvod
@@ -453,8 +453,8 @@ $$ L = \{ a^n b^n c^m d^m\ |\ n \geq 1, m \geq 1 \} \cup \{ a^n b^m c^m d^n\ |\ 
 ## Normalna oblika Greibachove
 > ### Definicija
 > Vsak kontekstno neodvisen jezik brez $\varepsilon$ je lahko generiran z gramatiko, kjer so vse produkcije oblike
-> $$ A \rightarrow aa$$
-> kjer je $A$ spremenljivka, $a$ pa (lahko prazen) niz znakov spremenljivk
+> $$ A \rightarrow a \alpha$$
+> kjer je $A$ spremenljivka, $a$ terminal in $\alpha$ (lahko prazen) niz spremenljivk.
 
 
 # Skladovni avtomati
