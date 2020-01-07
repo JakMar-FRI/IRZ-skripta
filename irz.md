@@ -61,7 +61,7 @@
     - [Ekvivalentnost SA, ki sprejme končno stanje in prazen sklad](#ekvivalentnost-sa-ki-sprejme-kon%c4%8dno-stanje-in-prazen-sklad)
     - [Ekvivalenca SA in KNJ](#ekvivalenca-sa-in-knj)
     - [Moč determinističnih in nedeterminističnih SA](#mo%c4%8d-deterministi%c4%8dnih-in-nedeterministi%c4%8dnih-sa)
-- [5. Lastnosti kontekstno nedovisnih jezikov](#5-lastnosti-kontekstno-nedovisnih-jezikov)
+- [6. Lastnosti kontekstno neodvisnih jezikov](#6-lastnosti-kontekstno-neodvisnih-jezikov)
   - [Lema o napihovanju za kontekstno neodvisne jezike](#lema-o-napihovanju-za-kontekstno-neodvisne-jezike)
   - [Lastnosti zaprte nad KNJ](#lastnosti-zaprte-nad-knj)
   - [Odločitveni algoritmi za KNJ](#odlo%c4%8ditveni-algoritmi-za-knj)
@@ -502,7 +502,7 @@ __V primeru skladovnih avtomatov, vedno predpostavljamo, da gre za nedeterminist
 >Za skladovni avtomat $M = (Q, \Sigma, \Gamma, \delta, q_0, Z_0, F)$ definiramo dvoje jezikov:
 >   * $L(M)$, ki je sprejet s končnim stanjem
 >        $$ L(M) = \{\ w\ |\ (q_0, w, Z_0,)\ \vdash^*\ (p, \varepsilon, \gamma)\ za\ nek\ p \in F \land \gamma \in \Gamma^*\ \} $$
->   * $L(M)$, ki je sprejet s praznenjem sklada
+>   * $N(M)$, ki je sprejet s praznenjem sklada
 >       $$ N(M) = \{\ w\ |\ (q_0, w, Z_0)\ \vdash^*\ (p, \varepsilon, \varepsilon)\ za\ nek\ p \in Q\ \}$$
 
 Jezika sta ekvivalenta, če obstaja nek SA, ki sprejema jezik s končnim stanjem, obstaja nek drugi SA, ki sprejema ta isti jezik s praznjenjem sklada.
@@ -535,7 +535,7 @@ __SA s končnim stanjem in SA s praznenjem sklada sta enakovredna.__ Če obstaja
 _Nedeterministični SA je močnejši od determinističnega._
 
 
-# 5. Lastnosti kontekstno nedovisnih jezikov
+# 6. Lastnosti kontekstno neodvisnih jezikov
 
 ## Lema o napihovanju za kontekstno neodvisne jezike
 __Neformalno__: za katerokoli dovolj dolgo besedo v jeziku $L$ lahko najdemo dve kratki podbesedi $v$ in $x$, da se ponavljajo vendar bo dana beseda še vedno v $L$.
