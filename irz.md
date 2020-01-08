@@ -484,7 +484,7 @@ Skladovni avtomat ima dva možna premika: _običajen premik_ in _$\varepsilon$_ 
 > * $q_0 \in Q$ začetno stanje,
 > * $Z_0 \in \Gamma$ začetni znak sklada,
 > * $F \subseteq Q$ množica končnih stanj,
-> * $\delta$ je prehodna funkcija ( mapiranje iz $Q \times (\Sigma \cup \{ \varepsilon \}) \times \Gamma$ v končno množico $Q \times \Gamma^*$ )
+> * $\delta$ je prehodna funkcija  $\delta:\ Q \times (\Sigma \times \{\varepsilon\})\ \times \Gamma \rightarrow 2^{Q \times \Gamma^*}$
 
 > ### Definicija determinističnega skladovnega avtomata
 > Skladovni avtomat $M = (Q, \Sigma, \Gamma, \delta, q_0, Z, 0, F)$ je deterministični, če prehodna funkcija $\delta$ izpolnjuje dva dodatna pogoja za vsak $q \in Q$ in $Z \in \Gamma$:
