@@ -18,15 +18,15 @@
     - [Neizračunljivi problemi](#neizra%c4%8dunljivi-problemi)
 - [2. Končni avtomati in regularni izrazi](#2-kon%c4%8dni-avtomati-in-regularni-izrazi)
   - [Sistem končni stanj](#sistem-kon%c4%8dni-stanj)
-  - [Deterministični končni avtomat <math><semantics><mrow><mi>D</mi><mi>K</mi><mi>A</mi><mo>=</mo><mo stretchy="false">(</mo><mi>Q</mi><mo separator="true">,</mo><mi mathvariant="normal">Σ</mi><mo separator="true">,</mo><mi>δ</mi><mo separator="true">,</mo><msub><mi>q</mi><mn>0</mn></msub><mo separator="true">,</mo><mi>F</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">DKA = (Q, \Sigma, \delta, q_0, F)</annotation></semantics></math>DKA=(Q,Σ,δ,q0​,F)](#deterministi%c4%8dni-kon%c4%8dni-avtomat-mathsemanticsmrowmidmimikmimiamimomomo-stretchy%22false%22momiqmimo-separator%22true%22momi-mathvariant%22normal%22%ce%a3mimo-separator%22true%22momi%ce%b4mimo-separator%22true%22momsubmiqmimn0mnmsubmo-separator%22true%22momifmimo-stretchy%22false%22momrowannotation-encoding%22applicationx-tex%22dka--q-sigma-delta-q0-fannotationsemanticsmathdkaq%ce%a3%ce%b4q0%e2%80%8bf)
+  - [Deterministični končni avtomat $DKA = (Q, \Sigma, \delta, q_0, F)$](#deterministi%c4%8dni-kon%c4%8dni-avtomat-mathsemanticsmrowmidmimikmimiamimomomo-stretchy%22false%22momiqmimo-separator%22true%22momi-mathvariant%22normal%22%ce%a3mimo-separator%22true%22momi%ce%b4mimo-separator%22true%22momsubmiqmimn0mnmsubmo-separator%22true%22momifmimo-stretchy%22false%22momrowannotation-encoding%22applicationx-tex%22dka--q-sigma-delta-q0-fannotationsemanticsmathdkaq%ce%a3%ce%b4q0%e2%80%8bf)
     - [Definicija DKA](#definicija-dka)
     - [Delovanje DKA](#delovanje-dka)
-  - [Nedeterministični končni avtomat <math><semantics><mrow><mi>N</mi><mi>K</mi><mi>A</mi><mo>=</mo><mo stretchy="false">(</mo><mi>Q</mi><mo separator="true">,</mo><mi mathvariant="normal">Σ</mi><mo separator="true">,</mo><mi>δ</mi><mo separator="true">,</mo><msub><mi>q</mi><mn>0</mn></msub><mo separator="true">,</mo><mi>F</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">NKA = (Q, \Sigma, \delta, q_0, F)</annotation></semantics></math>NKA=(Q,Σ,δ,q0​,F)](#nedeterministi%c4%8dni-kon%c4%8dni-avtomat-mathsemanticsmrowminmimikmimiamimomomo-stretchy%22false%22momiqmimo-separator%22true%22momi-mathvariant%22normal%22%ce%a3mimo-separator%22true%22momi%ce%b4mimo-separator%22true%22momsubmiqmimn0mnmsubmo-separator%22true%22momifmimo-stretchy%22false%22momrowannotation-encoding%22applicationx-tex%22nka--q-sigma-delta-q0-fannotationsemanticsmathnkaq%ce%a3%ce%b4q0%e2%80%8bf)
+  - [Nedeterministični končni avtomat $NKA = (Q, \Sigma, \delta, q_0, F)$](#nedeterministi%c4%8dni-kon%c4%8dni-avtomat-mathsemanticsmrowminmimikmimiamimomomo-stretchy%22false%22momiqmimo-separator%22true%22momi-mathvariant%22normal%22%ce%a3mimo-separator%22true%22momi%ce%b4mimo-separator%22true%22momsubmiqmimn0mnmsubmo-separator%22true%22momifmimo-stretchy%22false%22momrowannotation-encoding%22applicationx-tex%22nka--q-sigma-delta-q0-fannotationsemanticsmathnkaq%ce%a3%ce%b4q0%e2%80%8bf)
     - [Definicija](#definicija)
   - [Ekvivalentnost DKA in NKA](#ekvivalentnost-dka-in-nka)
-  - [Nedeterministični končni avtomati s tihimi prehodi <math><semantics><mrow><mi>ε</mi></mrow><annotation encoding="application/x-tex">\varepsilon</annotation></semantics></math>ε](#nedeterministi%c4%8dni-kon%c4%8dni-avtomati-s-tihimi-prehodi-mathsemanticsmrowmi%ce%b5mimrowannotation-encoding%22applicationx-tex%22varepsilonannotationsemanticsmath%ce%b5)
+  - [Nedeterministični končni avtomati s tihimi prehodi $\varepsilon$](#nedeterministi%c4%8dni-kon%c4%8dni-avtomati-s-tihimi-prehodi-mathsemanticsmrowmi%ce%b5mimrowannotation-encoding%22applicationx-tex%22varepsilonannotationsemanticsmath%ce%b5)
     - [Definicija](#definicija-1)
-  - [Ekvivalentnost NKA in NKA<math><semantics><mrow><msub><mrow></mrow><mi>ε</mi></msub></mrow><annotation encoding="application/x-tex">_\varepsilon</annotation></semantics></math>ε​](#ekvivalentnost-nka-in-nkamathsemanticsmrowmsubmrowmrowmi%ce%b5mimsubmrowannotation-encoding%22applicationx-tex%22varepsilonannotationsemanticsmath%ce%b5%e2%80%8b)
+  - [Ekvivalentnost NKA in NKA$_\varepsilon$](#ekvivalentnost-nka-in-nkamathsemanticsmrowmsubmrowmrowmi%ce%b5mimsubmrowannotation-encoding%22applicationx-tex%22varepsilonannotationsemanticsmath%ce%b5%e2%80%8b)
   - [Regularni izrazi](#regularni-izrazi)
     - [Definicija regularnih izrazov](#definicija-regularnih-izrazov)
     - [Operacije nad regularnimi izrazi](#operacije-nad-regularnimi-izrazi)
@@ -49,7 +49,7 @@
   - [Dvoumnne gramatike](#dvoumnne-gramatike)
   - [Poenostavljanje kontekstno neodvisnih gramatik](#poenostavljanje-kontekstno-neodvisnih-gramatik)
     - [Eliminacija neuporabnih simbolov](#eliminacija-neuporabnih-simbolov)
-    - [Eliminacija <math><semantics><mrow><mi>ε</mi></mrow><annotation encoding="application/x-tex">\varepsilon</annotation></semantics></math>ε produkcije](#eliminacija-mathsemanticsmrowmi%ce%b5mimrowannotation-encoding%22applicationx-tex%22varepsilonannotationsemanticsmath%ce%b5-produkcije)
+    - [Eliminacija $\varepsilon$ produkcije](#eliminacija-mathsemanticsmrowmi%ce%b5mimrowannotation-encoding%22applicationx-tex%22varepsilonannotationsemanticsmath%ce%b5-produkcije)
     - [Eliminacija enotskih produkcij](#eliminacija-enotskih-produkcij)
   - [Normalna oblika Chomskega](#normalna-oblika-chomskega)
   - [Normalna oblika Greibachove](#normalna-oblika-greibachove)
@@ -68,7 +68,7 @@
 - [7. Turingovi stroji](#7-turingovi-stroji)
   - [Definicija Turingovega stroja](#definicija-turingovega-stroja)
   - [Uporaba Turingovega stroja](#uporaba-turingovega-stroja)
-    - [Računanje vrednosti s TS](#ra%c4%8dunanje-vrednosti-s-ts)
+    - [Računanje vrednosti funkcij s TS](#ra%c4%8dunanje-vrednosti-funkcij-s-ts)
       - [Kapaciteta TS](#kapaciteta-ts)
     - [Razpoznavanje množic s TS](#razpoznavanje-mno%c5%beic-s-ts)
       - [Zmožnost TS](#zmo%c5%benost-ts)
@@ -83,9 +83,10 @@
     - [Turingov stroj z multidimenzionalnim trakom](#turingov-stroj-z-multidimenzionalnim-trakom)
     - [Turingovi stroji z nedeterminističnim programom](#turingovi-stroji-z-nedeterministi%c4%8dnim-programom)
   - [Univerzalen Turingov stroj](#univerzalen-turingov-stroj)
-    - [Kodiranje Turingovega stroja TODO](#kodiranje-turingovega-stroja-todo)
+    - [Kodiranje Turingovega stroja](#kodiranje-turingovega-stroja)
     - [Obstoj univerzalnega Turingovega stroja](#obstoj-univerzalnega-turingovega-stroja)
       - [Posledice obstoja univerzalnega TS](#posledice-obstoja-univerzalnega-ts)
+  - [Izreki iz teorije izračunljivosti](#izreki-iz-teorije-izra%c4%8dunljivosti)
 - [8. Nedoločljivost](#8-nedolo%c4%8dljivost)
   - [Vrste računskih problemov](#vrste-ra%c4%8dunskih-problemov)
   - [Reševanje odločitvenih problemov](#re%c5%a1evanje-odlo%c4%8ditvenih-problemov)
@@ -96,22 +97,22 @@
     - [Komplementarne množice in odločitveni problemi](#komplementarne-mno%c5%beice-in-odlo%c4%8ditveni-problemi)
   - [Primeri neiračunljivih problemov](#primeri-neira%c4%8dunljivih-problemov)
 - [10. Teorija računske zahtevnosti](#10-teorija-ra%c4%8dunske-zahtevnosti)
-  - [Deterministični čas in prostor (<math><semantics><mrow><mi>D</mi><mi>T</mi><mi>I</mi><mi>M</mi><mi>E</mi><mo separator="true">,</mo><mi>D</mi><mi>S</mi><mi>P</mi><mi>A</mi><mi>C</mi><mi>E</mi></mrow><annotation encoding="application/x-tex">DTIME, DSPACE</annotation></semantics></math>DTIME,DSPACE)](#deterministi%c4%8dni-%c4%8das-in-prostor-mathsemanticsmrowmidmimitmimiimimimmimiemimo-separator%22true%22momidmimismimipmimiamimicmimiemimrowannotation-encoding%22applicationx-tex%22dtime-dspaceannotationsemanticsmathdtimedspace)
-    - [Deterministična časovna zahtevnost &amp; zahtevnostni razred DTIME](#deterministi%c4%8dna-%c4%8dasovna-zahtevnost-amp-zahtevnostni-razred-dtime)
-    - [Deterministična prostorska zahtevnost &amp; zahtevnostni razred DSPACE](#deterministi%c4%8dna-prostorska-zahtevnost-amp-zahtevnostni-razred-dspace)
-  - [Nedeterministični čas in prostor (NTIME, NSPACE)](#nedeterministi%c4%8dni-%c4%8das-in-prostor-ntime-nspace)
-    - [Nedeterministična časovna zahtevnost &amp; zahtevnostni razred NTIME](#nedeterministi%c4%8dna-%c4%8dasovna-zahtevnost-amp-zahtevnostni-razred-ntime)
-    - [Nedeterministična prostorska zahtevnost &amp; zahtevnostni razred NSPACE](#nedeterministi%c4%8dna-prostorska-zahtevnost-amp-zahtevnostni-razred-nspace)
+  - [Deterministični čas in prostor ($DTIME, DSPACE$)](#deterministi%c4%8dni-%c4%8das-in-prostor-mathsemanticsmrowmidmimitmimiimimimmimiemimo-separator%22true%22momidmimismimipmimiamimicmimiemimrowannotation-encoding%22applicationx-tex%22dtime-dspaceannotationsemanticsmathdtimedspace)
+    - [Deterministična časovna zahtevnost & zahtevnostni razred *DTIME*](#deterministi%c4%8dna-%c4%8dasovna-zahtevnost--zahtevnostni-razred-dtime)
+    - [Deterministična prostorska zahtevnost & zahtevnostni razred _DSPACE_](#deterministi%c4%8dna-prostorska-zahtevnost--zahtevnostni-razred-dspace)
+  - [Nedeterministični čas in prostor *(NTIME, NSPACE)*](#nedeterministi%c4%8dni-%c4%8das-in-prostor-ntime-nspace)
+    - [Nedeterministična časovna zahtevnost & zahtevnostni razred *NTIME*](#nedeterministi%c4%8dna-%c4%8dasovna-zahtevnost--zahtevnostni-razred-ntime)
+    - [Nedeterministična prostorska zahtevnost & zahtevnostni razred _NSPACE_](#nedeterministi%c4%8dna-prostorska-zahtevnost--zahtevnostni-razred-nspace)
     - [Povzetek zahtevnostnih razredov](#povzetek-zahtevnostnih-razredov)
   - [Kompresija traku, linearna pohitritev, redukcija števila trakov](#kompresija-traku-linearna-pohitritev-redukcija-%c5%a1tevila-trakov)
     - [Kompresija traku, linearna pohitritev](#kompresija-traku-linearna-pohitritev)
     - [Redukcija števila trakov](#redukcija-%c5%a1tevila-trakov)
-  - [Relacije med DTIME, DSPACE, NTIME, NSPACE](#relacije-med-dtime-dspace-ntime-nspace)
-    - [Funkcija, ki se lepo obnaša (well-behaved)](#funkcija-ki-se-lepo-obna%c5%a1a-well-behaved)
-  - [Razredi P, NP, PSPACE, NPSPACE](#razredi-p-np-pspace-npspace)
+  - [Relacije med *DTIME, DSPACE, NTIME, NSPACE*](#relacije-med-dtime-dspace-ntime-nspace)
+    - [Funkcija, ki se lepo obnaša *(well-behaved)*](#funkcija-ki-se-lepo-obna%c5%a1a-well-behaved)
+  - [Razredi *P, NP, PSPACE, NPSPACE*](#razredi-p-np-pspace-npspace)
     - [Osnovna relacija med razredi](#osnovna-relacija-med-razredi)
-  - [<math><semantics><mrow><mi>P</mi><msup><mo>=</mo><mo stretchy="false">?</mo></msup><mi>N</mi><mi>P</mi></mrow><annotation encoding="application/x-tex">P =^? NP</annotation></semantics></math>P=?NP](#mathsemanticsmrowmipmimsupmomomo-stretchy%22false%22momsupminmimipmimrowannotation-encoding%22applicationx-tex%22p--npannotationsemanticsmathpnp)
-  - [NP-polni in NP-težki problemi](#np-polni-in-np-te%c5%beki-problemi)
+  - [$P =^? NP$](#mathsemanticsmrowmipmimsupmomomo-stretchy%22false%22momsupminmimipmimrowannotation-encoding%22applicationx-tex%22p--npannotationsemanticsmathpnp)
+  - [_NP-polni_ in _NP-težki_ problemi](#np-polni-in-np-te%c5%beki-problemi)
     - [Povzetek](#povzetek)
 
 # 1. Uvod
@@ -583,8 +584,8 @@ Obstajajo odločitveni algoritmi za KNJ, ki nam povejo ali je KNJ:
 > | | |
 > |--|--|
 > | algoritem | Turingov program |
-> | izračun | izvedba Turingovega programa |
-> | računska funkcija | Turingova-računska funkcija
+> | izračun | izvedba Turingovega programa na Turingovem stroju|
+> | računska funkcija | Turingova-računska funkcija|
 
 ## Definicija Turingovega stroja
 > Osnovna izvedba Turingovega stroja ima naslednje elemente:
@@ -597,7 +598,7 @@ Obstajajo odločitveni algoritmi za KNJ, ki nam povejo ali je KNJ:
 > Vhodne podatke hranimo v _vhodni besedi_, ki se nahaja na skrajno levem koncu traku.\
 > \
 > __Kontrolna enota__ je vedno v enem izmed končno mnogo stanj $Q = \{q_1, ..., g_s \}, q_s \geq 1$. Kjer je stanje $q_1$ začetno, nekatera stanja so končna in spadajo v podmnožico končnih stanj $F \subseteq Q$.\
-> V kontrolni enoti se nahaja __Turingov program__, vsak Turingov stroj ima svoj Turingov program, ki vsebuje _prehodno funkcijo $\delta$_ (npr. $\delta:\ Q \times \Gamma \rightarrow Q \times \Gamma \times \{\ L, R, S \ \}$ )\
+> V kontrolni enoti se nahaja __Turingov program__, vsak Turingov stroj ima svoj Turingov program, ki vsebuje _prehodno funkcijo $\delta$_ $\delta:\ Q \times \Gamma \rightarrow Q \times \Gamma \times \{\ L, R, S \ \}$ \
 > \
 > __Okno__ se lahko premakne nad katerokoli celico traku, ki ga lahko prebere ali na njega piše (pri čemer prepiše simbol kateri je bil do takrat zapisan). V enem koraku se okno lahko premakne zgolj na sosednjo celico.
 
@@ -613,18 +614,27 @@ Obstajajo odločitveni algoritmi za KNJ, ki nam povejo ali je KNJ:
 > *  če je $q_i$ končno stanje TS __stoji__
 > *  če je $\delta (q_i, z_r)\ \uparrow$ (TP nima naslednjega ukaza), TS __stoji__
 > *  če je $\delta (q_i, z_r)\ \downarrow = (q_j, z_w, D)$, TS naredi:
-> *  spremeni stanje v $q_j$
-> *  piše $z_w$ skozi okno
-> *  premakne okno v smeri $D \in \{\ Levo,\ Desno\ \}$ ali stoji na mestu $D \in \{\ Stoj\ \}$
+>     *   spremeni stanje v $q_j$
+>     *  piše $z_w$ skozi okno
+>     *  premakne okno v smeri $D \in \{\ Levo,\ Desno\ \}$ ali stoji na mestu $D \in \{\ Stoj\ \}$
 
-> Formalno je Turingov stroj sedmerec $T = (Q, \Sigma, \Gamma, \delta, q_1, \sqcup, F)$
+> Formalno je Turingov stroj sedmerec $T = (Q, \Sigma, \Gamma, \delta, q_1, \sqcup, F)$:
+> * $Q$ - končna množica stanj
+> * $\Sigma$ - vhodna abeceda
+> * $\Gamma$ - tračna abeceda, ki vsebuje vsaj tri znake
+> * $\Sigma$ - prehodna funkcija $Q \times \Gamma \rightarrow Q \times \Gamma \times \{L,\ R,\ S\}$
+> * $q_1$ - začetno stanje ($q_1 \in Q$)
+> * $\sqcup$ - prazen simbol ($\sqcup \in \Gamma$)
+> * $F$ - končna množica stanj $F \subseteq Q$
 
 
 ## Uporaba Turingovega stroja
-### Računanje vrednosti s TS
+### Računanje vrednosti funkcij s TS
 
-> Naj bo $T = (Q, \Sigma, \Gamma, \delta, q_1, \sqcup, F)$ TS in $k \geq 1$. K-ta funkcija $T$_-ja_ je parcialna funkcija $\varphi_T :\ (\Sigma^*)^k \rightarrow \Sigma^*$ definirana kot:\
-> $$ \varphi_T (u_1, ..., u_k)\ :=
+> Naj bo $T = (Q, \Sigma, \Gamma, \delta, q_1, \sqcup, F)$ TS in $k \geq 1$. K-mestna lastna funkcija T-ja je delna funkcija $\varphi_T :\ (\Sigma^*)^k \rightarrow \Sigma^*$ in definirana kot:
+>
+> _Če je vhod T-ja sestavljen iz k besed $u_1,...,u_k \in \Sigma^*$, potem je vrednost $varphi_T$ pri $u_1,...,u_k$ definirana:_
+>   $$ \varphi_T (u_1, ..., u_k)\ :=
  \begin{cases}
   v, \qquad if\ T\ stoji\ \land\ vrača\ na\ trak\ v\ \land\ v \in \Sigma^*\\
   \uparrow, \qquad if\ T\ ne\ stoji\ \lor\ trak\ nima\ besede\ v\ \Sigma^*
@@ -644,12 +654,12 @@ Obstajajo odločitveni algoritmi za KNJ, ki nam povejo ali je KNJ:
 
 #### Zmožnost TS
 > Če je $S \subseteq \Sigma^*$ in je $T$ Turingov stroj lahko za njega rečemo, da je:
-> * S je **določljiv**, če $\exist\ TS\ M$, ki odgovori na vprašanje *Ali je $x \in S$?* z **DA/NE** za vsak $x \in \Sigma^*$
-> * S je **pol določljiv**, če obstaja nek TS $M$, ki odgovori na vprašanje *Ali je $x \in S$?* z **DA** za vsak $x \in S$
-> * S je **ne odločljiv**, če ne obstaja TS $M$, ki odgovori na vprašanje *Ali je $x \in S$?* z **DA** za vsak $x \in S$
+> * S je **odločljiv**, če $\exist\ TS\ M$, ki odgovori na vprašanje *Ali je $x \in S$?* z **DA/NE** za vsak $x \in \Sigma^*$
+> * S je **polodločljiv**, če obstaja nek TS $M$, ki odgovori na vprašanje *Ali je $x \in S$?* z **DA** za vsak $x \in S$
+> * S je **neodločljiv**, če ne obstaja TS $M$, ki odgovori na vprašanje *Ali je $x \in S$?* z **DA** za vsak $x \in S$
 
 ### Generiranje množic
-> Naj bo $T = (Q, \Sigma, \Gamma, \delta, q_1, \sqcup, F)$ TS. T imenujemo *generator*, če zaporedno piše na trek znake iz $\Sigma^*$ in jih razmejuje z znakom *#*. Jezik generiran s TS je množica:
+> Naj bo $T = (Q, \Sigma, \Gamma, \delta, q_1, \sqcup, F)$ TS. T imenujemo *generator*, če zaporedno piše na trak znake iz $\Sigma^*$ in jih razmejuje z znakom *#* (kjer $\# \notin \Sigma$). Jezik generiran s TS je množica:
 > $$ G(T) = \{\ w\ |\ w \in \Sigma^* \land\ T\ eventualno\ zapiše\ w\ na\ trak\ \} $$
 
 ### Izračunljivo preštevni jeziki
@@ -657,7 +667,7 @@ Obstajajo odločitveni algoritmi za KNJ, ki nam povejo ali je KNJ:
 
 *Množica je izračunljivo preštevna, če jo lahko definiramo s Turingovim strojem.*
 
-> Množica $S$ je izračunljivo preštevna $\iff$ $S$ je delno določljiva.
+> Množica $S$ je izračunljivo preštevna $\iff$ $S$ je polodločjiv.
 
 ### Odnosi med razredi jezikov
 
@@ -698,14 +708,33 @@ Turingov stroj $V$ ima nedeterministični program in v vsakem koraku določi kon
 **Vse modulacije Turingovih strojev so si po moči enakovredne. Kar lahko izračuna katerakoli izmed modulacij, lahko izračuna tudi osnovni Turingov stroj (ali katera druga modulacija).**
 
 ## Univerzalen Turingov stroj
-### Kodiranje Turingovega stroja TODO
+### Kodiranje Turingovega stroja
+*Kako zakodirati TM T tako, da ga predsatvimo z neko kodirno abecedo?*
+
+1.  Kodirna abeceda naj bo $\{0,\ 1\}$
+2.  Za vsak element množic $Q,\ \Sigma,\ \Gamma,\ \{L,\ R,\ S\}$ (v tem vrstnem redu) določimo kodo sestvaljeno iz _n števil ničel_ za n-ti element skupne množice
+3.  Zakodiramo vse ukaze v funkciji $\delta$
+4. Začetek in konec kode definiramo s tremi enicami $111$, začetek in konec posameznega ukaza funkcije $\delta$ označimo z dvema enicama $11$, dele ukaza ločimo z eno enico $1$
+
+$$\delta(q_i,\ z_j) = (q_k,\ z_l,\ D_m) K = \Rightarrow 0^i10^j10^k10^l10^m$$
+$$ <\delta> = 111K_111K_211...11K_n111 $$
 
 
 ### Obstoj univerzalnega Turingovega stroja
+
+> Obstaja Turingov stroj, ki lahko izračuna vse kar je izračunljivo z kakšnim drugim Turingovim strojem.
+
 Idejo, da takšen TS obstaja dokažemo tako, da zgradimo TS, ki lahko simulira delovanje katerega koli drugeag Turingovega stroja. Takšen TS dokažemo s teorijo izračunljivosti.
 
 #### Posledice obstoja univerzalnega TS
 Kot posledica obstoja takšnega stroja se začne gradnja (in izgradnja) računskega stroja, ki bi ga lahko uporabili za več različnih namenov. Nastane __splošno namenski računalnik__.
+
+## Izreki iz teorije izračunljivosti
+1.  $S$ je odločljiv $\Rightarrow$ $S$ je polodločljiv
+2.  $S$ je odločljiv $\Rightarrow$ $\bar{S}$ je odločljiv
+3.  $S$ in $\bar{S}$ sta polodločljiva $\Rightarrow$ $S$ je odločljiv
+4.  $A$ in $B$ sta polodločljiva $\Rightarrow$ $A\cap B$ in $A\cup B$ sta polodločljiva
+5. $A$ in $B$ sta odločljiva $\Rightarrow$ $A\cap B$ in $A\cup B$ sta odločljiva
 
 
 # 8. Nedoločljivost
@@ -735,9 +764,9 @@ Velja torej povezava med odločitvenimi problemi in množicami:
 $$ d \in D\ je\ pozitiven\ \iff\ \langle\ d\ \rangle\ \in L(D) $$
 
 > Naj bo $D$ odločitveni problem za katerega lahko rečemo, da je
-> * *določljiv* (ali *izračunljiv*), če je $L(D)$ določljiva množica
-> * *poldoločljiv*, če je $L(D)$ poldoločljiva množica
-> * *nedoločljiv* (ali *neizračunljiv*), če je $L(D)$ je nedoločljiva množica
+> * *odločljiv* (ali *izračunljiv*), če je $L(D)$ določljiva množica
+> * *polodločljiv*, če je $L(D)$ poldoločljiva množica
+> * *neodločljiv* (ali *neizračunljiv*), če je $L(D)$ je nedoločljiva množica
 
 ## Problem ustavitve
 > ### Definicija problema ustavitve *(halting problem)*
@@ -763,9 +792,9 @@ Ker je $K$ nedoločljiv je nedoločljiv tudi problem $D_H$, ki je podproblem $D_
 
 ## Osnovne vrste odločitveni problemov
 Obstajajo 3 vrste odločitvenih problemov:
-* **$D$ je določjiv**: obstaja algoritem, ki reši arbitrarno instanco $d \in D$. Takšen algoritem imenujemo _decider_ problema $D$
+* **$D$ je odločljiv**: obstaja algoritem, ki reši arbitrarno instanco $d \in D$. Takšen algoritem imenujemo _decider_ problema $D$
 * **$D$ je poldoločljiv neodločljiv**: obstaja algoritem, ki reši arbitrarno pozitivno instanco $d \in D$. Takšen algoritem imenujemo *recognizer*.
-* **$D$ ni poldoločljiv**: ne obstaja algoritem, ki bi rešil arbitrarno pozitivno ali negativno instanco $d \in D$
+* **$D$ ni polodločljiv**: ne obstaja algoritem, ki bi rešil arbitrarno pozitivno ali negativno instanco $d \in D$
 
 ### Komplementarne množice in odločitveni problemi
 * množici $S\ \triangle$ in $\bar{S}\ \blacktriangle$ sta *določljivi*
@@ -789,7 +818,7 @@ Obstajajo 3 vrste odločitvenih problemov:
 *Koliko korakov ali celic vhodnega traku potrebuje TS, da razpozna jezik $L(D)$ za odločitveni problem $D$?*
 
 ### Deterministična časovna zahtevnost & zahtevnostni razred *DTIME*
-> Naj bo $M = (Q, \Sigma, \Gamma, \delta, q_1, \sqcup, F$ deterministični TS z $k \geq 1$ dvostranskim neskončnim trakom.\
+> Naj bo $M = (Q, \Sigma, \Gamma, \delta, q_1, \sqcup, F)$ deterministični TS z $k \geq 1$ dvostranskim neskončnim trakom.\
 > \
 > TS $M$ ima deterministično časovno zahtevnost $T(n)$, če za vsak vhod $w \in \Sigma^*$ dolžine $n$, naredi $\leq T(n)$ korakov preden se zaustavi.
 
@@ -888,7 +917,7 @@ $DPSACE (\ S(n)\ ) =$ {odločitveni problem rešljiv nedeterministično v prosto
 > Če $L \in DTIME(T(n))$, potem $L$ sprejema eno tračni TS v $T^2(n)$ času.\
 > Če $L \in NTIME(T(n))$, potem $L$ sprejema eno tračni TS v $T^2(n)$ času.\
 > Če $L \in DTIME(T(n))$, potem $L$ sprejema dvo tračni TS v $T(n)\ log\ T(n)$ času.\
-> Če $L \in NTIME(T(n))$, potem $L$ sprejema dvo tračni TS v $T(n)\ log\ T(n)$ času.\
+> Če $L \in NTIME(T(n))$, potem $L$ sprejema dvo tračni TS v $T(n)\ log\ T(n)$ času.
 
 ## Relacije med *DTIME, DSPACE, NTIME, NSPACE*
 Zamenjava *nedeterminističnega* algoritma z *determinističnim* lahko povzroči v najslabšem primeru *eksponentno* rast *časovne kompleksnosti* in *kvadratno* rast *prostorske kompleksnosti*.
@@ -899,11 +928,18 @@ Zamenjava *nedeterminističnega* algoritma z *determinističnim* lahko povzroči
 > $$ L \in DSPACE(\ S(n)\ )\ \land\ S(n) \geq log_2n \Rightarrow \exist c:\ L \in DTIME(c^{S(n)}) )$$
 > *kar lahko rešimo na prostoru $O(S(n))$ lahko rešimo v najslabšem primeru v času $O(T^{S(n)})$*
 
-> $$ NSPACE (\ S(n)\ ) \subseteq DSPACE (\ S^2(n)\ ),\ če\ S(n) \geq log_2\  \land\ S(n)\ se\ "lepo-obnaša"$$
+> $$ NSPACE (\ S(n)\ ) \subseteq DSPACE (\ S^2(n)\ ),\ če\ S(n) \geq log_2n\  \land\ S(n)\ se\ "lepo-obnaša"$$
 > *kar lahko rešimo nedetreministično na prostoru $O(S(n))$ lahko rešimo deterministično na prostoru $O(S^2(n))$*
 
 ### Funkcija, ki se lepo obnaša *(well-behaved)*
-TO-DO
+
+Funkcija $S(n)$ je **prostorsko predstavljiva**, če obstaja TM $M$ prostorske zahtevnosti $S(n)$, da za vsak $n$, obstaja vhod dolžine $n$ na katerem $M$ uporabi točno $S(n)$ tračnih celic.
+
+Če za vsak $n$, $M$ uporabi točno $S(n)$ celic za vsak vhod dolžine $n$, potem rečemo, da je $S(n)$ **popolnoma prostorsko predstavljiva** funkcija.
+
+Funkcija $T(n)$ je **časovno predstavljiva**, če obstaja TM $M$ časovne zahtevnosti $T(n)$, da za vsak $n$, obstaja vhod dolžine $n$ na katerem $M$ uporabi točno $T(n)$ prehodov.
+
+Če za vse $n$, $M$ naredi točno $T(n)$ prehodov za vsak vhod dolžine $n$, potem rečemo, da je $T(n)$ **popolnoma časovno predstavljiva** funkcija.
 
 ## Razredi *P, NP, PSPACE, NPSPACE*
 Gre za zahtevnostne razrede osnovane na polinomski časovni/prostorski zahtevnosti, saj so algoritmi rešljivi v polinomskem času/prostoru definirani kot "razumski".
