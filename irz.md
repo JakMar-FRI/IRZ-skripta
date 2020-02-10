@@ -704,6 +704,8 @@ Turingov stroj $V$ ima _d_-dimenzionalen trak. Brano-pisalna glava se lahko prem
 
 ### Turingovi stroji z nedeterminističnim programom
 Turingov stroj $V$ ima nedeterministični program in v vsakem koraku določi končno mnogo alternativnih prehodov, ki se izvedejo.
+> **Prehodna funkcija**:
+> $$ \delta :\ Q \times \Gamma \rightarrow 2^{Q \times \Gamma \times \{L,\ R,\ S\}} $$
 
 **Vse modulacije Turingovih strojev so si po moči enakovredne. Kar lahko izračuna katerakoli izmed modulacij, lahko izračuna tudi osnovni Turingov stroj (ali katera druga modulacija).**
 
@@ -764,16 +766,16 @@ Velja torej povezava med odločitvenimi problemi in množicami:
 $$ d \in D\ je\ pozitiven\ \iff\ \langle\ d\ \rangle\ \in L(D) $$
 
 > Naj bo $D$ odločitveni problem za katerega lahko rečemo, da je
-> * *odločljiv* (ali *izračunljiv*), če je $L(D)$ določljiva množica
-> * *polodločljiv*, če je $L(D)$ poldoločljiva množica
-> * *neodločljiv* (ali *neizračunljiv*), če je $L(D)$ je nedoločljiva množica
+> * *odločljiv* (ali *izračunljiv*), če je $L(D)$ odločljiva množica
+> * *polodločljiv*, če je $L(D)$ polodločljiva množica
+> * *neodločljiv* (ali *neizračunljiv*), če je $L(D)$ je neodločljiva množica
 
 ## Problem ustavitve
 > ### Definicija problema ustavitve *(halting problem)*
 > Problem ustavitve $D_{halt}$ je definiran kot:\
 > $D_{halt} =$ "Ali se TS $T$ z vhodno besedo $w \in \Sigma^*$ zaustavi?"\
 >\
->Problem ustavitve je **nedoločljiv**.
+>Problem ustavitve je **neodločljiv, vendar polodločljiv**.
 
 *V kolikor bi v prihodnosti zgradili algoritem, ki bi odgovoril na problem ustavitve, bi ugotovili, da ne bo bil sposoben dati odgovora za vsaj en par $T, W$.*
 
