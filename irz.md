@@ -111,6 +111,7 @@
     - [Funkcija, ki se lepo obnaša *(well-behaved)*](#funkcija-ki-se-lepo-obna%c5%a1a-well-behaved)
   - [Razredi *P, NP, PSPACE, NPSPACE*](#razredi-p-np-pspace-npspace)
     - [Osnovna relacija med razredi](#osnovna-relacija-med-razredi)
+      - [Dokaz: $P \subseteq NP$](#dokaz-mathsemanticsmrowmipmimo%e2%8a%86mominmimipmimrowannotation-encoding%22applicationx-tex%22p-subseteq-npannotationsemanticsmathp%e2%8a%86np)
   - [$P =^? NP$](#mathsemanticsmrowmipmimsupmomomo-stretchy%22false%22momsupminmimipmimrowannotation-encoding%22applicationx-tex%22p--npannotationsemanticsmathpnp)
   - [_NP-polni_ in _NP-težki_ problemi](#np-polni-in-np-te%c5%beki-problemi)
     - [Povzetek](#povzetek)
@@ -963,10 +964,21 @@ Gre za zahtevnostne razrede osnovane na polinomski časovni/prostorski zahtevnos
 
 *Vsak deterministični TS s polinomsko časovno zahtevnostjo lahko vidimo kot trivialno nedeterminističnega.*
 
+#### Dokaz: $P \subseteq NP$
+
+1. Definiramo $P$ in $NP$
+$$ P = \cup_{i \geq 1}\ DTIME(n^i) $$
+$$ NP = \cup_{i \geq 1}\ NTIME(n^i) $$
+2.  Za vsak $P$ problem lahko definiramo deterministični TS, ki ga reši. Za vsak $NP$ problem lahko definiramo nedeterministični TS, ki ga reši.
+3.  Vsak deterministični TS lahko definiramo kot _trivialni_ nedeterministični TS.
+4.  Iz točk _2_ in _3_ sklepamo, da lahko vsak $P$ problem rešimo s _trivialnim_ nedeterminističnim TS, torej velja $P \subseteq NP$
+
 ## $P =^? NP$
 Od prej vemo, da drži da k deterministično rešljivem problemu na polinomskem prosturu, nedeterminizem ne doda nič ($PSPACE == NPSPACE$). Torej ali velja tudi $P = NP$?
 
 Verjetno ne drži, ker bi posledice bile preveč "presenetljive"$_{Robič\ 2018}$.
+
+![](./pics/p_np.png)
 
 ## _NP-polni_ in _NP-težki_ problemi
 
