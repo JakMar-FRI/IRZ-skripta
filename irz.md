@@ -112,8 +112,12 @@
   - [Razredi *P, NP, PSPACE, NPSPACE*](#razredi-p-np-pspace-npspace)
     - [Osnovna relacija med razredi](#osnovna-relacija-med-razredi)
       - [Dokaz: $P \subseteq NP$](#dokaz-mathsemanticsmrowmipmimo%e2%8a%86mominmimipmimrowannotation-encoding%22applicationx-tex%22p-subseteq-npannotationsemanticsmathp%e2%8a%86np)
+      - [Dokaz: $NP \subseteq PSPACE$](#dokaz-mathsemanticsmrowminmimipmimo%e2%8a%86momipmimismimipmimiamimicmimiemimrowannotation-encoding%22applicationx-tex%22np-subseteq-pspaceannotationsemanticsmathnp%e2%8a%86pspace)
+      - [Dokaz: $PSPACE = NPSPACE$](#dokaz-mathsemanticsmrowmipmimismimipmimiamimicmimiemimomominmimipmimismimipmimiamimicmimiemimrowannotation-encoding%22applicationx-tex%22pspace--npspaceannotationsemanticsmathpspacenpspace)
   - [$P =^? NP$](#mathsemanticsmrowmipmimsupmomomo-stretchy%22false%22momsupminmimipmimrowannotation-encoding%22applicationx-tex%22p--npannotationsemanticsmathpnp)
+    - [Polinomska časovna redukcija](#polinomska-%c4%8dasovna-redukcija)
   - [_NP-polni_ in _NP-težki_ problemi](#np-polni-in-np-te%c5%beki-problemi)
+      - [Dokaz polinomske ekvivalentnosti NP-polnih problemov](#dokaz-polinomske-ekvivalentnosti-np-polnih-problemov)
     - [Povzetek](#povzetek)
 
 # 1. Uvod
@@ -973,12 +977,25 @@ $$ NP = \cup_{i \geq 1}\ NTIME(n^i) $$
 3.  Vsak deterministični TS lahko definiramo kot _trivialni_ nedeterministični TS.
 4.  Iz točk _2_ in _3_ sklepamo, da lahko vsak $P$ problem rešimo s _trivialnim_ nedeterminističnim TS, torej velja $P \subseteq NP$
 
+#### Dokaz: $NP \subseteq PSPACE$
+Če je $L \in NP$, potem $\exists k$ za katerega velja $L \in NTIME(n^k)$. Iz tega (po teoremu $NTIME(T(n)) \subseteq NSPACE(T(n))$ in $NSPACE(S(n)) \subseteq DSPACE(S(n)),\ če\ S(n) \geq log_2n\ \wedge\ \text{S(n) "well-behaved"}$) velja $L \in NSPACE(n^k) \Rightarrow L \in DSPACE(n^{2k})$
+
+#### Dokaz: $PSPACE = NPSPACE$
+1.  Najprej dokažemo $PSPACE \subseteq NPSAPCE$: vsak deterministični TS (ki rešuje deterministične probleme na polinomskem prostoru) lahko definiramo kot *trivialni* nedeterministični TS, ki rešuje probleme na (ne)determinističnem prostoru
+2. Dokažemo $NPSPACE \subseteq PSPACE$: $NSPACE = \bigcup_{n \geq 1} NSPACE(n^i) \subseteq \bigcup_{n \geq 1} DSPACE(n^i) \subseteq PSPACE$
+3. Iz 1 in 2 izhaja $PSPACE = NSPACE$
+
 ## $P =^? NP$
 Od prej vemo, da drži da k deterministično rešljivem problemu na polinomskem prosturu, nedeterminizem ne doda nič ($PSPACE == NPSPACE$). Torej ali velja tudi $P = NP$?
 
 Verjetno ne drži, ker bi posledice bile preveč "presenetljive"$_{Robič\ 2018}$.
 
 ![](./pics/p_np.png)
+
+### Polinomska časovna redukcija
+Problem $D \in NP$ lahko **polinomsko-časovno prevedemo** na problem $D'$, $D \leq^p D'$, če obstaja deterministični $TM M$ polinomske časovne verjetnosti, ki $\forall d \in D$, vrne $d' \in D'$, tako da je $d\ pozitiven \Leftrightarrow d'\ pozitiven$. Relacijo $\leq^p$ imenujemo **polinomsko-časovna prevedba**.
+
+*M v polinomskem času zamenja $d \in D$ z $d' \in D'$, ki ima enak rezultat kot $d$ ($M$ vzame $<d>$ in v polinomskem času vrne besedo $M(<d>)$, kjer je $<d> \in L(D) \Leftrightarrow M(<d>) \in L(D')$.*
 
 ## _NP-polni_ in _NP-težki_ problemi
 
@@ -990,7 +1007,22 @@ Verjetno ne drži, ker bi posledice bile preveč "presenetljive"$_{Robič\ 2018}
 
 > Problem $D^*$ je definiran kot NP-polni, če velja:
 > * $D^* \in NP$
-> * $D \leq D^*$, za vsak $D \in NP$
+> * $D \leq^p D^*$, za vsak $D \in NP$
+
+#### Dokaz polinomske ekvivalentnosti NP-polnih problemov
+Odločitvena problema $D_1$ in $D_2$ sta polinomsko ekvivalentna, če obstaja polinomska časovna prevedba $\leq^p$, da je $(D_1 \leq^p D_2) \wedge (D_2 \leq^p D_1)$.
+
+Dokaži, da sta $D_1$ in $D_2$ polinomsko ekvivalentna, če sta NP-polna.
+
+1. Definiramo NP-poln problem:
+$$ D* \in NP-poln,\ če\ D^* \in NP \wedge \forall D\in NP:\ D \leq^p D^* $$
+
+2.  Iz definicije NP-polnega problema sledi:
+$$ D_1 \in NP\ \wedge \forall D\in NP:\ D \leq^pD_1 $$
+$$ D_2 \in NP\ \wedge \forall D\in NP:\ D \leq^pD_2 $$
+
+3. Posledično:
+$$ D_2 \leq^p D_1\ \wedge\ D_1 \leq^p D_2\ \Rightarrow D_1 = D_2 $$
 
 ### Povzetek
 *Če velja $P \not = NP$, potem je NP razred sestavljen iz:*
