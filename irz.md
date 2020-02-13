@@ -605,7 +605,9 @@ Obstajajo odločitveni algoritmi za KNJ, ki nam povejo ali je KNJ:
 > __Kontrolna enota__ je vedno v enem izmed končno mnogo stanj $Q = \{q_1, ..., g_s \}, q_s \geq 1$. Kjer je stanje $q_1$ začetno, nekatera stanja so končna in spadajo v podmnožico končnih stanj $F \subseteq Q$.\
 > V kontrolni enoti se nahaja __Turingov program__, vsak Turingov stroj ima svoj Turingov program, ki vsebuje _prehodno funkcijo $\delta$_ $\delta:\ Q \times \Gamma \rightarrow Q \times \Gamma \times \{\ L, R, S \ \}$ \
 > \
-> __Okno__ se lahko premakne nad katerokoli celico traku, ki ga lahko prebere ali na njega piše (pri čemer prepiše simbol kateri je bil do takrat zapisan). V enem koraku se okno lahko premakne zgolj na sosednjo celico.
+> __Okno__ se lahko premakne nad katerokoli celico traku, ki ga lahko prebere ali na njega piše (pri čemer prepiše simbol kateri je bil do takrat zapisan). V enem koraku se okno lahko premakne zgolj na sosednjo celico.\
+>\
+> **Stroga definicija direktnega prehoda** TS lahko neposredno preide iz stanja $q_i$ v stanje $q_j$ ($q_i \vdash q_j$), če obstaja takšno navodilo v TP (Turingovem programu), čigar izvajanje povzroči, da TS preide iz stanja $q_i$ v stanje $q_j$. *Če obstaja $q_i \vdash^* q_j$, potem TS lahko preide iz stanja $q_i$ v stanje $q_j$.*
 
 > ### Delovanje Turingovega stroja
 > 
@@ -1001,7 +1003,7 @@ Problem $D \in NP$ lahko **polinomsko-časovno prevedemo** na problem $D'$, $D \
 
 "Najtežji" problemi v NP so definirani kot problemi $D^*$ z lastnostmi:
 * $D^* \in NP$
-* $D \leq D^*$, za vsak $D \in NP$
+* $D \leq^p D^*$, za vsak $D \in NP$
 
 > Problem $D^*$ je definiran kot NP-težki, če velja $D \leq^p D^*$, za vsak $D \in NP$.
 
