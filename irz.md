@@ -87,7 +87,7 @@
     - [Obstoj univerzalnega Turingovega stroja](#obstoj-univerzalnega-turingovega-stroja)
       - [Posledice obstoja univerzalnega TS](#posledice-obstoja-univerzalnega-ts)
   - [Izreki iz teorije izračunljivosti](#izreki-iz-teorije-izra%c4%8dunljivosti)
-- [8. Nedoločljivost](#8-nedolo%c4%8dljivost)
+- [8. Neodločljivost](#8-neodlo%c4%8dljivost)
   - [Vrste računskih problemov](#vrste-ra%c4%8dunskih-problemov)
   - [Reševanje odločitvenih problemov](#re%c5%a1evanje-odlo%c4%8ditvenih-problemov)
     - [Jezik odločitvenih problemov](#jezik-odlo%c4%8ditvenih-problemov)
@@ -747,7 +747,7 @@ Kot posledica obstoja takšnega stroja se začne gradnja (in izgradnja) računsk
 5. $A$ in $B$ sta odločljiva $\Rightarrow$ $A\cap B$ in $A\cup B$ sta odločljiva
 
 
-# 8. Nedoločljivost
+# 8. Neodločljivost
 
 ## Vrste računskih problemov
 **Odločitveni problemi** (da/ne problemi): so problemi na katere lahko odgovorimo z da ali z ne (*rešitev je enojni bit*).
