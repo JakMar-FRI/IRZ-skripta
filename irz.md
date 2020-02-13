@@ -117,7 +117,8 @@
   - [$P =^? NP$](#mathsemanticsmrowmipmimsupmomomo-stretchy%22false%22momsupminmimipmimrowannotation-encoding%22applicationx-tex%22p--npannotationsemanticsmathpnp)
     - [Polinomska časovna redukcija](#polinomska-%c4%8dasovna-redukcija)
   - [_NP-polni_ in _NP-težki_ problemi](#np-polni-in-np-te%c5%beki-problemi)
-      - [Dokaz polinomske ekvivalentnosti NP-polnih problemov](#dokaz-polinomske-ekvivalentnosti-np-polnih-problemov)
+    - [Prevedba NP-polnega na NP-težek problem](#prevedba-np-polnega-na-np-te%c5%beek-problem)
+    - [Dokaz polinomske ekvivalentnosti NP-polnih problemov](#dokaz-polinomske-ekvivalentnosti-np-polnih-problemov)
     - [Povzetek](#povzetek)
 
 # 1. Uvod
@@ -1011,7 +1012,13 @@ Problem $D \in NP$ lahko **polinomsko-časovno prevedemo** na problem $D'$, $D \
 > * $D^* \in NP$
 > * $D \leq^p D^*$, za vsak $D \in NP$
 
-#### Dokaz polinomske ekvivalentnosti NP-polnih problemov
+### Prevedba NP-polnega na NP-težek problem
+
+NP-poln problem lahko prevedemo na NP-težek problem:
+
+$$ D \in \text{NP-poln} \wedge E \in \text{NP-težek}\ \Rightarrow D \leq^p E $$
+
+### Dokaz polinomske ekvivalentnosti NP-polnih problemov
 Odločitvena problema $D_1$ in $D_2$ sta polinomsko ekvivalentna, če obstaja polinomska časovna prevedba $\leq^p$, da je $(D_1 \leq^p D_2) \wedge (D_2 \leq^p D_1)$.
 
 Dokaži, da sta $D_1$ in $D_2$ polinomsko ekvivalentna, če sta NP-polna.
